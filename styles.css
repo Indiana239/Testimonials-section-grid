@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  margin: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas:
+    "a a b c"
+    "d e e c";
+  gap: 20px;
+}
+
+.firstBox {
+  display: flex;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 30px 30px 70px 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-area: a;
+}
+
+.secondBox {
+  display: flex;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 30px 30px 0 30px;
+  margin-top: 50px;
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+  flex-direction: column;
+  grid-area: b;
+}
+
+.thirdBox {
+  display: flex;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 30px 30px 0 30px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+  flex-direction: column;
+  grid-area: d;
+}
+
+.fourthBox {
+  display: flex;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 30px 30px 0 30px;
+  margin-bottom: 50px;
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+  flex-direction: column;
+  grid-area: e;
+}
+
+.fifthBox {
+  display: flex;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 30px 30px 0px 30px;
+  margin-right: 100px;
+  margin-top: 50px;
+  background-color: white;
+  color: hsl(217, 19%, 35%);
+  flex-direction: column;
+  grid-area: c;
+  box-shadow: 0 5px 5px 0 gray;
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 15px;
+  padding-top: 25px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.testimony {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.verified {
+  opacity: 50%;
+}
+
+.review {
+  opacity: 70%;
+}
